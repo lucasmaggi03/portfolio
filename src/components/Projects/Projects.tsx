@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
     ];
 
     return (
-        <main className='projects'>
+        <section id='projects' className='projects'>
             <div className='content-pr'>
                 <h1 className='title-project'>&lt;Proyectos/&gt;</h1>
                 {projects.map((project, index) => (
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
                     </div>
                 ))}
             </div>
-        </main>
+        </section>
     );
 };
 
