@@ -55,13 +55,13 @@
 .header-content h2{
     margin: 0;
     font-size: 2rem;
-    color: #E2E8F0;
+    color: var(--h1-color);
 }
 
 .header-content p {
     margin: 10px 0 0;
     font-size: 1.2rem;
-    color: #94A3B8;
+    color: var(--p-color);
     padding-top: 1rem;
 }
 

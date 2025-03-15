@@ -16,7 +16,7 @@
 .title-project {
     font-size: 2rem;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--h1-color);
     margin-bottom: 2rem;
 }
 
@@ -50,7 +50,7 @@
     height: 100%;
     padding: 2rem;
     background-color: rgba(5, 12, 31, 0.9); /* Fondo semitransparente */
-    color: #ffffff;
+    color: var(--h1-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,9 +72,11 @@
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
+    color: var(--p-color);
 }
 
 .tech-icons {
     display: flex;
     gap: 1rem;
 }
+
