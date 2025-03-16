@@ -1,18 +1,30 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
 html, body {
     width: 100%;
-    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% del viewport */
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #030712; /* Color de fondo base */
+    background-color: #030712;
     background-image: radial-gradient(
         ellipse 80% 80% at 50% -20%,
         rgba(120, 119, 198, 0.3),
         rgba(255, 255, 255, 0)
     );
-    background-attachment: fixed; /* Fija el fondo para que no se desplace con el scroll */
+    background-attachment: fixed;
     font-family: 'Onest Variable', system-ui, sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
+
+html body {
+    padding: 0;
+    margin: 0;
+    overflow-y: inherit;
+  }
 
 :root{
     --h1-color:#E2E8F0;
