@@ -17,7 +17,6 @@ html, body {
     font-family: 'Onest Variable', system-ui, sans-serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 html body {
