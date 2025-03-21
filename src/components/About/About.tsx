@@ -12,9 +12,10 @@ const About: React.FC = () => {
                 <h1>Hey! Soy Lucas Maggi</h1>
                 <h2>Full Stack Developer</h2>
                 <p>
-                    Estudiante avanzado de Ingeniería en Sistemas de Información (ISI) con gran interés en el desarrollo web. 
-                    Experiencia en tecnologías como React, TypeScript, SQL y JWT para crear aplicaciones eficientes y seguras. 
-                    Apasionado por aprender y enfrentar nuevos desafíos técnicos.
+                    Estudiante avanzado de Ingeniería en Sistemas de Información (ISI) con gran interés en el desarrollo web.
+                    <br />
+                    He desarrollado proyectos personales utilizando tecnologías como React, TypeScript, SQL, Node.js y Express.js para crear aplicaciones eficientes, escalables y seguras. Mi enfoque incluye el diseño de interfaces de usuario atractivas con React y la implementación de APIs RESTful robustas.
+                    <br />Apasionado por aprender y enfrentar nuevos desafíos técnicos, busco seguir creciendo en el desarrollo de soluciones innovadoras que combinen un frontend dinámico con un backend eficiente.
                 </p>
                 <div className='social-media'>
                     <a
