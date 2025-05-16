@@ -1,96 +1,87 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Projects.css';
-import ImageGallery from 'react-image-gallery';
-import "react-image-gallery/styles/css/image-gallery.css";
+import { FaGithub } from 'react-icons/fa';
 
 import pr11 from '../../img/fpr/11-pr.webp';
 import pr12 from '../../img/fpr/12-pr.webp';
-import pr13 from '../../img/fpr/13-pr.webp';
-import pr14 from '../../img/fpr/14-pr.webp';
-
 import pr21 from '../../img/spr/21-pr.webp';
 import pr22 from '../../img/spr/22-pr.webp';
-import pr23 from '../../img/spr/23-pr.webp';
-import pr24 from '../../img/spr/24-pr.webp';
-import pr25 from '../../img/spr/25-pr.webp';
-import pr26 from '../../img/spr/26-pr.webp';
-
 import pr31 from '../../img/tpr/31-pr.webp';
 import pr32 from '../../img/tpr/32-pr.webp';
-import pr33 from '../../img/tpr/33-pr.webp';
 
-import { FaReact } from "react-icons/fa";
-import { BiLogoTypescript } from "react-icons/bi";
-import { SiMercadopago } from "react-icons/si";
-import { SiSequelize } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
+const projects = [
+  {
+    title: "UTimbaN",
+    image: pr11,
+    gallery: [pr11, pr12],
+    description: "Plataforma interactiva con pagos, autenticación y monedas virtuales.",
+    tags: ["React", "TypeScript", "Sequelize", "MercadoPago"],
+    github: "https://github.com/starboyagus/DSW-TP-24"
+  },
+  {
+    title: "TakeFee",
+    image: pr21,
+    gallery: [pr21, pr22],
+    description: "Sistema de gestión y cobro de cuotas para clubes o comunidades.",
+    tags: ["React", "TypeScript", "Node.js", "MySQL"],
+    github: "https://github.com/lucasmaggi03/debt-collection-software"
+  },
+  {
+    title: "Picadito",
+    image: pr31,
+    gallery: [pr31, pr32],
+    description: "Reservas online de canchas y complejos deportivos.",
+    tags: ["React", "TypeScript", "Node.js", "MySQL"],
+    github: "https://github.com/lucasmaggi03/picadito-frontend"
+  },
+  {
+    title: "Wordle Clone",
+    image: pr31,
+    gallery: [pr31, pr32],
+    description: "Clone del popular juego de adivinanza de palabras.",
+    tags: ["React", "TypeScript"],
+    github: "https://github.com/lucasmaggi03/wordle-clone"
+  },
+];
 
 const Projects: React.FC = () => {
-    const [expanded, setExpanded] = useState<number | null>(null);
-
-    const handleImageClick = (index: number) => {
-        setExpanded(expanded === index ? null : index);
-    };
-
-    const projects = [
-        {
-            title: "UTimbaN | Plataforma de Entretenimiento Interactivo",
-            description: "Desarollamos en equipo una plataforma web interactiva como proyecto académico, utilizando React y TypeScript para el frontend, y Sequelize con SQL para la gestión de datos. Implementé un sistema de autenticación seguro con JWT y utilicé Axios para la comunicación entre frontend y backend. Además, integré MercadoPago para gestionar transacciones de monedas virtuales. Este proyecto me permitió fortalecer mis habilidades en desarrollo full-stack, seguridad de aplicaciones y pasarelas de pago.",
-            image: [pr11, pr12, pr13, pr14],
-            tech: [<FaReact size="2rem" color='var(--icon-tech)' />, <BiLogoTypescript size="2rem" color='var(--icon-tech)' />, <SiMercadopago size="2rem" color='var(--icon-tech)' />, <SiSequelize size="2rem" color='var(--icon-tech)' />]
-        },
-        {
-            title: "TakeFee | Sistema de Gestión de Cuotas",
-            description: "Es una herramienta diseñada para agilizar y simplificar la gestión y cobro de cuotas. Automatiza procesos como la generación de facturas, recordatorios de pagos, seguimiento de pagos pendientes. Ideal para ahorrar tiempo y garantizar una recaudación eficiente y organizada.",
-            image: [pr21, pr22, pr23, pr24, pr25, pr26],
-            tech: [<FaReact size="2rem" color='var(--icon-tech)' />, <BiLogoTypescript size="2rem" color='var(--icon-tech)' />, <FaNodeJs size="2rem" color='var(--icon-tech)'/>, <SiMysql size="2rem" color='var(--icon-tech)' />]
-        },
-        {
-            title: "Picadito | Sistema de reserva de complejos deportivos",
-            description: "En desarrollo. \"Picadito\" es una plataforma web interactiva para la reserva de canchas de fútbol, utilizando React con TypeScript para el frontend, lo que permitió una experiencia de usuario dinámica y un código más estructurado. En el backend, implementé Node.js con Express.js para manejar las rutas y la lógica del servidor. Utilicé MySQL para la gestión eficiente de los datos. A través de este proyecto, mejore mis habilidades en desarrollo full-stack, repase la integración entre frontend y backend y gestión de bases de datos.",
-            image: [pr31, pr32, pr33],
-            tech: [<FaReact size="2rem" color='var(--icon-tech)' />, <BiLogoTypescript size="2rem" color='var(--icon-tech)' />, <FaNodeJs size="2rem" color='var(--icon-tech)'/>, <SiMysql size="2rem" color='var(--icon-tech)' />]
-        },
-    ];
-
-    return (
-        <section id='projects' className='projects'>
-            <div className='content-pr'>
-                <h1 className='title-project'>&lt;Proyectos/&gt;</h1>
-                {projects.map((project, index) => (
-                    <div
-                        key={index}
-                        className={`card ${expanded === index ? 'expanded' : ''}`}
-                        onClick={() => handleImageClick(index)}
-                    >
-                        <div
-                            className='carousel'
-                            onClick={(e) => e.stopPropagation()} 
-                        >
-                            <ImageGallery
-                                items={project.image.map((img) => ({
-                                    original: img,
-                                }))}
-                                showPlayButton={false}
-                                autoPlay={false}
-                                showFullscreenButton={false}
-                            />
-                        </div>
-                        {expanded !== index && (
-                            <div className='card-content'>
-                                <h2>{project.title}</h2>
-                                <p>{project.description}</p>
-                                <div className='tech-icons'>
-                                    {project.tech}
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                ))}
+  return (
+    <section id="projects" className="projects-section">
+      <h1 className="projects-title">&lt;Proyectos/&gt;</h1>
+      <div className="projects-grid">
+        {projects.map((project, idx) => (
+          <div key={idx} className="card">
+            <div className="mac-header">
+              <span className="red"></span>
+              <span className="yellow"></span>
+              <span className="green"></span>
             </div>
-        </section>
-    );
+            <span className="card-title">{project.title}</span>
+            <p className="card-description">{project.description}</p>
+            <div className="tags">
+              {project.tags.map((tag, i) => (
+                <span key={i} className="card-tag">{tag}</span>
+              ))}
+            </div>
+            <div className="code-editor">
+              <pre><code>
+{`<h1>GitHub</h1>
+<p>Repositorio del proyecto ${project.title}</p>`}
+              </code></pre>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="github-link"
+              >
+                <FaGithub /> Ver en GitHub
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Projects;

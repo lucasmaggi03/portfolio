@@ -7,12 +7,8 @@ html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #030712;
-    background-image: radial-gradient(
-        ellipse 80% 80% at 50% -20%,
-        rgba(120, 119, 198, 0.3),
-        rgba(255, 255, 255, 0)
-    );
+    --tw-bg-opacity: 1;
+    background-color: rgb(18 18 18 / var(--tw-bg-opacity));
     background-attachment: fixed;
     font-family: 'Onest Variable', system-ui, sans-serif;
     scroll-behavior: smooth;
@@ -28,6 +24,7 @@ html body {
 :root{
     --h1-color:#E2E8F0;
     --p-color:#94A3B8;
-    --bg-color:#030712;
+    --b1:#3b82f6;
+    --b2:#1e3a8a;
     --icon-tech: #084ea8;
 }
