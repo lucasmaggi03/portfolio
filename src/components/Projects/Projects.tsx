@@ -2,18 +2,9 @@ import React from "react";
 import "./Projects.css";
 import { FaGithub } from "react-icons/fa";
 
-import pr11 from "../../img/fpr/11-pr.webp";
-import pr12 from "../../img/fpr/12-pr.webp";
-import pr21 from "../../img/spr/21-pr.webp";
-import pr22 from "../../img/spr/22-pr.webp";
-import pr31 from "../../img/tpr/31-pr.webp";
-import pr32 from "../../img/tpr/32-pr.webp";
-
 const projects = [
   {
     title: "UTimbaN",
-    image: pr11,
-    gallery: [pr11, pr12],
     description:
       "Interactive platform with payments, authentication, and virtual currencies.",
     tags: ["React", "TypeScript", "Sequelize", "MercadoPago"],
@@ -21,8 +12,6 @@ const projects = [
   },
   {
     title: "TakeFee",
-    image: pr21,
-    gallery: [pr21, pr22],
     description:
       "Management and fee collection system for clubs or communities.",
     tags: ["React", "TypeScript", "Node.js", "MySQL"],
@@ -30,16 +19,12 @@ const projects = [
   },
   {
     title: "Picadito",
-    image: pr31,
-    gallery: [pr31, pr32],
     description: "Online booking for sports fields and complexes.",
     tags: ["React", "TypeScript", "Node.js", "MySQL"],
     github: "https://github.com/lucasmaggi03/picadito-frontend",
   },
   {
     title: "Wordle Clone",
-    image: pr31,
-    gallery: [pr31, pr32],
     description: "Clone of the popular word guessing game.",
     tags: ["React", "TypeScript"],
     github: "https://github.com/lucasmaggi03/wordle-clone",
