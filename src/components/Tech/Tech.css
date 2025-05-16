@@ -50,3 +50,27 @@
   font-weight: 500;
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 800px) {
+  .tech-grid {
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+    max-width: 100%;
+  }
+}
