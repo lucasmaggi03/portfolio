@@ -18,7 +18,7 @@ const technologies = [
 
 const Tech: React.FC = () => {
   return (
-    <section className="tech-section">
+    <section id='techs' className="tech-section">
       <h2 className="tech-title">&lt;Techs/&gt;</h2>
       <div className="tech-grid">
         {technologies.map((tech) => (

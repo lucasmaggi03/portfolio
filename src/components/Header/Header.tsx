@@ -21,21 +21,21 @@ const Header: React.FC = () => {
       <nav className="navbar">
         <ul className="nav-list">
           <li className="logo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Logo" />
           </li>
           <li className="nav-item">
-            <a href="#about" data-text="Sobre mí">
-              <span>Sobre mí</span>
+            <a href="#about" data-text="About Me">
+              <span>About Me</span>
             </a>
           </li>
           <li className="nav-item">
-            <a href="#projects" data-text="Proyectos">
-              <span>Proyectos</span>
+            <a href="#techs" data-text="Techs">
+              <span>Techs</span>
             </a>
           </li>
           <li className="nav-item">
-            <a href="#contact" data-text="Contacto">
-              <span>Contacto</span>
+            <a href="#projects" data-text="Projects">
+              <span>Projects</span>
             </a>
           </li>
           <li
