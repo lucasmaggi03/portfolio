@@ -3,32 +3,58 @@
     {
       "title": "UTimbaN",
       "description": "Interactive platform with payments, authentication, and virtual currencies.",
+      "longDescription": "Detailed explanation of the project...",
+      "image": "/images/project1.png",
       "tags": ["React", "TypeScript", "Sequelize", "MercadoPago"],
       "github": "https://github.com/starboyagus/DSW-TP-24"
     },
     {
       "title": "TakeFee",
       "description": "Management and fee collection system for clubs or communities.",
+      "longDescription": "Detailed explanation of the project...",
+      "image": "/images/project1.png",
       "tags": ["React", "TypeScript", "Node.js", "MySQL"],
       "github": "https://github.com/lucasmaggi03/debt-collection-software"
     },
     {
       "title": "Picadito",
       "description": "Online booking for sports fields and complexes.",
+      "longDescription": "Detailed explanation of the project...",
+      "image": "/images/project1.png",
       "tags": ["React", "TypeScript", "Node.js", "MySQL"],
       "github": "https://github.com/lucasmaggi03/picadito-frontend"
     },
     {
       "title": "Wordle Clone",
       "description": "Clone of the popular word guessing game.",
+      "longDescription": "Detailed explanation of the project...",
+      "image": "/images/project1.png",
       "tags": ["React", "TypeScript"],
       "github": "https://github.com/lucasmaggi03/wordle-clone"
     },
     {
       "title": "LAGuitar",
       "description": "Guitar sales store with shopping cart.",
+      "longDescription": "Detailed explanation of the project...",
+      "image": "/images/project1.png",
       "tags": ["React", "TypeScript"],
-      "github": "https://github.com/lucasmaggi03/wordle-clone"
+      "github": "https://github.com/lucasmaggi03/la-guitar"
+    },
+    {
+      "title": "Calories Tracker",
+      "description": "Calorie and exercise tracker",
+      "longDescription": "Detailed explanation of the project...",
+      "image": "/images/project1.png",
+      "tags": ["React", "TypeScript", "tailwind"],
+      "github" : "https://github.com/lucasmaggi03/calorie-tracker"
+    },
+    {
+      "title": "Tip calculator",
+      "description": "Order and tip management",
+      "longDescription": "Detailed explanation of the project...",
+      "image": "/images/project1.png",
+      "tags": ["React", "TypeScript", "tailwind"],
+      "github" : "https://github.com/lucasmaggi03/calorie-tracker"
     }
   ]
 }
